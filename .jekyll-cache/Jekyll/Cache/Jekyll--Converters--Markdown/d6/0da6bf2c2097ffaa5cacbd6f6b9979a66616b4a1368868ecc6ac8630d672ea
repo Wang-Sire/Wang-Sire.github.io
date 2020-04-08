@@ -1,19 +1,19 @@
----
-layout: post
-title:  "My's  LeetCode "
-date:   2020-04-08 
-categories: Python3  LeetCode
----
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+I"�<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+ Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+
+<pre><code class="language-python3">_面试题40. 最小的k个数，Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
 aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
  Duis aute irure dolor in reprehenderit in voluptate velit esse
- 
----
 
-'''
+
+
 输入整数数组 arr ，找出其中最小的 k 个数。例如，输入4、5、1、6、2、7、3、8这8个数字，则最小的4个数字是1、2、3、4。
 
+ 
+
 示例 1：
+
 输入：arr = [3,2,1], k = 2
 输出：[1,2] 或者 [2,1]
 示例 2：
@@ -21,14 +21,12 @@ aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
 输出：[0]
  
 限制：
-0 <= k <= arr.length <= 10000
-0 <= arr[i] <= 10000
+0 &lt;= k &lt;= arr.length &lt;= 10000
+0 &lt;= arr[i] &lt;= 10000
+
 解题思路:
 一般解法：
-
-'''
-
-```python
+,,,python3
 class Solution(object):
     def getLeastNumbers(self, arr, k):
         """
@@ -38,7 +36,7 @@ class Solution(object):
         """
         new_arr = []
         if k != 0 :
-            if k <= len(arr):
+            if k &lt;= len(arr):
                 for i in range(0,k):
                     x = min(arr)
                     new_arr.append(x)
@@ -47,11 +45,13 @@ class Solution(object):
                 return new_arr
         else:
                 return  new_arr
-```
 炫酷解法：
-```python
    arr.sort()
    return arr[:k]
         
-```
+</code></pre>
 
+<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature 
+requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>
+
+:ET

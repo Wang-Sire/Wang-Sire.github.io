@@ -1,0 +1,47 @@
+I"X<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+ Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+
+<hr />
+
+<p>’'’jiavscript
+输入整数数组 arr ，找出其中最小的 k 个数。例如，输入4、5、1、6、2、7、3、8这8个数字，则最小的4个数字是1、2、3、4。</p>
+
+<p>示例 1：
+输入：arr = [3,2,1], k = 2
+输出：[1,2] 或者 [2,1]
+示例 2：
+输入：arr = [0,1,2,1], k = 1
+输出：[0]</p>
+
+<p>限制：
+0 &lt;= k &lt;= arr.length &lt;= 10000
+0 &lt;= arr[i] &lt;= 10000
+解题思路:
+一般解法：</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">Solution</span><span class="p">(</span><span class="nx">object</span><span class="p">):</span>
+    <span class="nx">def</span> <span class="nx">getLeastNumbers</span><span class="p">(</span><span class="nb">self</span><span class="p">,</span> <span class="nx">arr</span><span class="p">,</span> <span class="nx">k</span><span class="p">):</span>
+        <span class="dl">"""</span><span class="s2">
+        :type arr: List[int]
+        :type k: int
+        :rtype: List[int]
+        </span><span class="dl">"""</span>
+        <span class="nx">new_arr</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">if</span> <span class="nx">k</span> <span class="o">!=</span> <span class="mi">0</span> <span class="p">:</span>
+            <span class="k">if</span> <span class="nx">k</span> <span class="o">&lt;=</span> <span class="nx">len</span><span class="p">(</span><span class="nx">arr</span><span class="p">):</span>
+                <span class="k">for</span> <span class="nx">i</span> <span class="k">in</span> <span class="nx">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nx">k</span><span class="p">):</span>
+                    <span class="nx">x</span> <span class="o">=</span> <span class="nx">min</span><span class="p">(</span><span class="nx">arr</span><span class="p">)</span>
+                    <span class="nx">new_arr</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span>
+                    <span class="nx">arr</span><span class="p">.</span><span class="nx">remove</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span>
+   
+                <span class="k">return</span> <span class="nx">new_arr</span>
+        <span class="k">else</span><span class="p">:</span>
+                <span class="k">return</span>  <span class="nx">new_arr</span>
+<span class="err">炫酷解法：</span>
+   <span class="nx">arr</span><span class="p">.</span><span class="nx">sort</span><span class="p">()</span>
+   <span class="k">return</span> <span class="nx">arr</span><span class="p">[:</span><span class="nx">k</span><span class="p">]</span>
+        
+</code></pre></div></div>
+
+:ET

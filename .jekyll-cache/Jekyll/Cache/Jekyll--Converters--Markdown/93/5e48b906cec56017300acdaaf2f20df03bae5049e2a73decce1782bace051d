@@ -1,0 +1,44 @@
+I"z<p>##面试题40. 最小的k个数
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+ Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+
+<p>输入整数数组 arr ，找出其中最小的 k 个数。例如，输入4、5、1、6、2、7、3、8这8个数字，则最小的4个数字是1、2、3、4。</p>
+
+<p>示例 1：</p>
+
+<p>输入：arr = [3,2,1], k = 2
+输出：[1,2] 或者 [2,1]
+示例 2：</p>
+
+<p>输入：arr = [0,1,2,1], k = 1
+输出：[0]</p>
+
+<p>限制：</p>
+
+<p>0 &lt;= k &lt;= arr.length &lt;= 10000
+0 &lt;= arr[i] &lt;= 10000</p>
+
+<p>解题思路:
+一般解法：
+class Solution(object):
+    def getLeastNumbers(self, arr, k):
+        “””
+        :type arr: List[int]
+        :type k: int
+        :rtype: List[int]
+        “””
+        new_arr = []
+        if k != 0 :
+            if k &lt;= len(arr):
+                for i in range(0,k):
+                    x = min(arr)
+                    new_arr.append(x)
+                    arr.remove(x)</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>            return new_arr
+    else:
+            return  new_arr 炫酷解法：    arr.sort()    return arr[:k]
+</code></pre></div></div>
+
+:ET

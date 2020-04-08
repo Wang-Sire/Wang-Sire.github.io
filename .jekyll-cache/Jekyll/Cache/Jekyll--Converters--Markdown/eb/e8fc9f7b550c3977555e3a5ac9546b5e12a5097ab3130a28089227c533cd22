@@ -1,0 +1,50 @@
+I"�<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+ Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+
+<hr />
+
+<p>’’’
+输入整数数组 arr ，找出其中最小的 k 个数。例如，输入4、5、1、6、2、7、3、8这8个数字，则最小的4个数字是1、2、3、4。</p>
+
+<p>示例 1：
+输入：arr = [3,2,1], k = 2
+输出：[1,2] 或者 [2,1]
+示例 2：
+输入：arr = [0,1,2,1], k = 1
+输出：[0]</p>
+
+<p>限制：
+0 &lt;= k &lt;= arr.length &lt;= 10000
+0 &lt;= arr[i] &lt;= 10000
+解题思路:
+一般解法：</p>
+
+<p>’’’</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Solution</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">getLeastNumbers</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">arr</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
+        <span class="s">"""
+        :type arr: List[int]
+        :type k: int
+        :rtype: List[int]
+        """</span>
+        <span class="n">new_arr</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">if</span> <span class="n">k</span> <span class="o">!=</span> <span class="mi">0</span> <span class="p">:</span>
+            <span class="k">if</span> <span class="n">k</span> <span class="o">&lt;=</span> <span class="nb">len</span><span class="p">(</span><span class="n">arr</span><span class="p">):</span>
+                <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">k</span><span class="p">):</span>
+                    <span class="n">x</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span>
+                    <span class="n">new_arr</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+                    <span class="n">arr</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+   
+                <span class="k">return</span> <span class="n">new_arr</span>
+        <span class="k">else</span><span class="p">:</span>
+                <span class="k">return</span>  <span class="n">new_arr</span>
+</code></pre></div></div>
+<p>炫酷解法：</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   <span class="n">arr</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+   <span class="k">return</span> <span class="n">arr</span><span class="p">[:</span><span class="n">k</span><span class="p">]</span>
+        
+</code></pre></div></div>
+
+:ET

@@ -1,0 +1,62 @@
+I"�<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+ Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">_</span><span class="err">面试题</span><span class="mf">40.</span> <span class="err">最小的</span><span class="n">k</span><span class="err">个数，</span><span class="n">Lorem</span> <span class="n">ipsum</span> <span class="n">dolor</span> <span class="n">sit</span> <span class="n">amet</span><span class="p">,</span> <span class="n">consectetur</span> <span class="n">adipisicing</span> <span class="n">elit</span><span class="p">,</span> <span class="n">sed</span> <span class="n">do</span> <span class="n">eiusmod</span> <span class="n">tempor</span> <span class="n">incididunt</span> <span class="n">ut</span> <span class="n">labore</span> <span class="n">et</span> <span class="n">dolore</span> <span class="n">magna</span> 
+<span class="n">aliqua</span><span class="o">.</span> <span class="n">Ut</span> <span class="n">enim</span> <span class="n">ad</span> <span class="n">minim</span> <span class="n">veniam</span><span class="p">,</span> <span class="n">quis</span> <span class="n">nostrud</span> <span class="n">exercitation</span> <span class="n">ullamco</span> <span class="n">laboris</span> <span class="n">nisi</span> <span class="n">ut</span> <span class="n">aliquip</span> <span class="n">ex</span> <span class="n">ea</span> <span class="n">commodo</span> <span class="n">consequat</span><span class="o">.</span>
+ <span class="n">Duis</span> <span class="n">aute</span> <span class="n">irure</span> <span class="n">dolor</span> <span class="ow">in</span> <span class="n">reprehenderit</span> <span class="ow">in</span> <span class="n">voluptate</span> <span class="n">velit</span> <span class="n">esse</span>
+
+
+
+<span class="err">输入整数数组</span> <span class="n">arr</span> <span class="err">，找出其中最小的</span> <span class="n">k</span> <span class="err">个数。例如，输入</span><span class="mi">4</span><span class="err">、</span><span class="mi">5</span><span class="err">、</span><span class="mi">1</span><span class="err">、</span><span class="mi">6</span><span class="err">、</span><span class="mi">2</span><span class="err">、</span><span class="mi">7</span><span class="err">、</span><span class="mi">3</span><span class="err">、</span><span class="mi">8</span><span class="err">这</span><span class="mi">8</span><span class="err">个数字，则最小的</span><span class="mi">4</span><span class="err">个数字是</span><span class="mi">1</span><span class="err">、</span><span class="mi">2</span><span class="err">、</span><span class="mi">3</span><span class="err">、</span><span class="mi">4</span><span class="err">。</span>
+
+ 
+
+<span class="err">示例</span> <span class="mi">1</span><span class="err">：</span>
+
+<span class="err">输入：</span><span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="n">k</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="err">输出：</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span> <span class="err">或者</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
+<span class="err">示例</span> <span class="mi">2</span><span class="err">：</span>
+
+<span class="err">输入：</span><span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="n">k</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="err">输出：</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+ 
+
+<span class="err">限制：</span>
+
+<span class="mi">0</span> <span class="o">&lt;=</span> <span class="n">k</span> <span class="o">&lt;=</span> <span class="n">arr</span><span class="o">.</span><span class="n">length</span> <span class="o">&lt;=</span> <span class="mi">10000</span>
+<span class="mi">0</span> <span class="o">&lt;=</span> <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mi">10000</span>
+
+
+
+<span class="err">解题思路</span><span class="p">:</span>
+<span class="err">一般解法：</span>
+<span class="p">,,,</span><span class="n">python3</span>
+<span class="k">class</span> <span class="nc">Solution</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">getLeastNumbers</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">arr</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
+        <span class="s">"""
+        :type arr: List[int]
+        :type k: int
+        :rtype: List[int]
+        """</span>
+        <span class="n">new_arr</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">if</span> <span class="n">k</span> <span class="o">!=</span> <span class="mi">0</span> <span class="p">:</span>
+            <span class="k">if</span> <span class="n">k</span> <span class="o">&lt;=</span> <span class="nb">len</span><span class="p">(</span><span class="n">arr</span><span class="p">):</span>
+                <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">k</span><span class="p">):</span>
+                    <span class="n">x</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span>
+                    <span class="n">new_arr</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+                    <span class="n">arr</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+   
+                <span class="k">return</span> <span class="n">new_arr</span>
+        <span class="k">else</span><span class="p">:</span>
+                <span class="k">return</span>  <span class="n">new_arr</span>
+<span class="err">炫酷解法：</span>
+   <span class="n">arr</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+   <span class="k">return</span> <span class="n">arr</span><span class="p">[:</span><span class="n">k</span><span class="p">]</span>
+        
+</code></pre></div></div>
+
+<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature 
+requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>
+
+:ET

@@ -8,7 +8,7 @@ categories: CentOS. Mysql5.7. Yum  Python2
 安装：Mysql5.7
 Let's go  Yum install Mysql
 
---
+---
 
 原因： 项目链接数据库出现了问题，经常性的中断，迫使我们查看mysql 后重启电脑。
 第一次：

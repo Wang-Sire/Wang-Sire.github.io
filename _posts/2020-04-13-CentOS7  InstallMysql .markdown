@@ -6,6 +6,7 @@ categories: CentOS. Mysql5.7. Yum  Python2
 ---
 系统: CentOS Linux release 7.6.1810 (Core)
 安装：Mysql5.7
+Let's go  Yum install Mysql
 
 --
 

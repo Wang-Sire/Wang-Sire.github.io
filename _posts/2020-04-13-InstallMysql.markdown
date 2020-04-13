@@ -6,13 +6,12 @@ categories: CentOS. Mysql5.7. Yum  Python2
 ---
 系统: CentOS Linux release 7.6.1810 (Core)
 安装：Mysql5.7
-
---
-
+---
+'''
 原因： 项目链接数据库出现了问题，经常性的中断，迫使我们查看mysql 后重启电脑。
 第一次：
 	因为之前的历史原因，导致yum 不能用了，因为yum是python2.6版本，我的是python2.7和python3.6.8的版本所以yum就不行了，最终我打算tar包安装，在安装之前也是遇到了非常强大的bug 所以才会重新安装具体问题如下图：
-
+'''
 
 Tar安装了好半天全盘删除了mysql 所有的文件最后还是安装后报错，在mysql日志中提示这个错误
 [ERROR] Can't open the mysql.plugin table. Please run mysql_upgrade to create it.

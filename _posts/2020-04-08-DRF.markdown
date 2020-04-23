@@ -4,14 +4,10 @@ title:  "DRF - info"
 date:   2020-04-18 
 categories: Python3  Django Rest Frame
 ---
-$\color{green}{
+
 Django REST framework 框架是一个用于构建Web API 的强大而又灵活的工具.
-}$
-$\color{green}{
 通常简称为DRF框架 或 REST framework。
-}$
-$\color{green}{
-DRF框架是建立在Django框架基础之上，由Tom Christie大牛二次开发的开源项目。}$
+DRF框架是建立在Django框架基础之上，由Tom Christie大牛二次开发的开源项目。
 
 ---
 
